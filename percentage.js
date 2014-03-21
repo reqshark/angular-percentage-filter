@@ -1,7 +1,7 @@
 angular.module('percentage', [])
     .filter('percentage', function () {
         return function (input) {
-            var rounded = Math.round(input*10000)/100;
+            var rounded = Math.round(input*100)/100;
             if (rounded == NaN) {
                 return '';
             }
